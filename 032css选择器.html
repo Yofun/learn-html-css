@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS选择器</title>
+    <style>
+      /* 标签选择器 */
+      h1 {
+        color: red;
+      }
+
+      /* 类选择器 */
+      .green {
+        color: green;
+      }
+      .blue {
+        color: blue;
+      }
+      .red {
+        color: red;
+      }
+      .orange {
+        color: orange;
+      }
+      /* id选择器 */
+      #myDiv {
+          width: 80px;
+          height: 80px;
+          background-color: red;
+          color: white;
+      }
+      /* 通配符选择器, 表示所有标签 */
+      *{
+        padding: 20px;
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 标签选择器 -->
+    <h1>这是一个红色标题(标签选择器)</h1>
+    <!-- 类选择器 -->
+    <h1 class="green">这是一个绿色标题(类选择器)</h1>
+    <h1 style="font-size: 100px;">
+      <span class="blue">G</span>
+      <span class="red">o</span>
+      <span class="orange">o</span>
+      <span class="blue">g</span>
+      <span class="green">l</span>
+      <span class="red">e</span>
+    </h1>
+
+    <!-- id选择器 -->
+    <div id="myDiv">id选择器</div>
+  </body>
+</html>

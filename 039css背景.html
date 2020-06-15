@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css背景</title>
+
+    <style>
+        div {
+            height: 300px;
+            margin-bottom: 10px;
+        }
+        /* 背景颜色 */
+        .bg-color{
+            background-color: pink;
+        }
+        /* 背景图片 */
+        .bg-image{
+            background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592239976224&di=b39129f630aced4573402f8895212711&imgtype=0&src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D13467895%2C689942136%26fm%3D214%26gp%3D0.jpg);
+        }
+        /* 背景平铺,默认会平铺 */
+        .bg-pingpu{
+            /* repeat-x 横向平铺 */
+            /* repeat-y 纵向平铺 */
+            /* no-repeat 不平铺 */
+            /* repeat 平铺，默认横向平铺 */
+            background-repeat: no-repeat;
+        }
+        /* 背景位置 */
+        .bg-position{
+            /* 
+            取值： 方位、x y坐标、
+                方位：left|top|bottom|right|center
+                x y坐标：50% 50%，30% 60%，50%
+             */
+            background-position: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bg-color">背景颜色</div>
+    <div class="bg-image">背景图片</div>
+    <div class="bg-image bg-pingpu bg-color">不平铺背景图片</div>
+    <div class="bg-image bg-pingpu bg-position">背景位置</div>
+</body>
+</html>

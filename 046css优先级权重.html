@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css样式权重</title>
+
+    <style>
+      /* 通配符权重: 0,0,0,0 */
+      * {
+      }
+      /* 标签权重: 0,0,0,1 */
+      div {
+      }
+      /* 类和伪类选择器权重：0,0,1,0 */
+      .one {
+      }
+      div:hover {
+      }
+      /* ID选择器权重：0,1,0,0 */
+      #two {
+      }
+
+      /* 行内选择器:1,0,0,0 */
+
+      /* !important权重: 无穷大 */
+    </style>
+  </head>
+  <body></body>
+</html>

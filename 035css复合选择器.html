@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css复合选择器</title>
+
+    <style>
+      /* 后代选择器 */
+      .nav a {
+        color: red;
+      }
+
+      /* 子元素选择器 */
+      div > strong {
+        color: red;
+      }
+
+      /* 交集选择器 */
+      p.red {
+        color: red;
+      }
+
+      /* 并集选择器 , */
+      p,
+      div {
+          background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="#">内部链接</a>
+      <a href="#">内部链接</a>
+      <a href="#">内部链接</a>
+    </div>
+
+    <div>
+      <strong>儿子</strong>
+    </div>
+
+    <div>
+      <p>
+        <strong>孙子</strong>
+      </p>
+    </div>
+
+    <p class="red">红色的红色的</p>
+  </body>
+</html>

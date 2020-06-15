@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css链接伪类选择器</title>
+
+    <style>
+        a{
+            text-decoration: none;
+        }
+
+        /* 未访问的连接 */
+        a:link{
+            color: red;
+        }
+        /* 已访问的链接状态 */
+        a:visited{
+            color: orange;
+        }
+        /* 鼠标悬浮时的状态 */
+        a:hover {
+            color: black;
+        }
+
+        /* 鼠标点击选中时的状态,(按下鼠标未松开的时候) */
+        a:active {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.xiaomi.com" target="_blank">这是一个链接</a>
+</body>
+</html>

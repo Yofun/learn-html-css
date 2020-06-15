@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>标签显示模式</title>
+    <style>
+      /* 块级元素: div,h1~h6,p,ul,ol,li,dl
+            块级元素的display属性为：block
+            特点：
+                独占一行
+                可设置宽高
+                宽度默认为100%
+                可存放行块级元素和行内元素
+         */
+      /* 行内元素: a,span,i,em,b,strong,s,del,u,ins
+            行内元素的display属性为：inline
+            特点：
+                一行显示多列横向排列
+                宽高设置无效
+                默认宽度为自身内容
+                可存放文本或其他行内元素
+         */
+      /* 行内块级元素:img,input,td
+            行内块级元素的display属性为：inline-block
+            特点：
+                和相邻 行内/行内块级 元素在一行上，但是之间会有空隙。一行可显示多个
+                默认宽高为自身内容的宽高
+                宽高、行高、外边距以及内边距都可以控制  */
+
+      img {
+        width: 240px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>我是一个div</div>
+    <div>我是一个div</div>
+    <div>我是一个div</div>
+
+    <span>我是span</span>
+    <span>我是span</span>
+    <span>我是span</span>
+
+    <div>
+      <img
+        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592239976224&di=b39129f630aced4573402f8895212711&imgtype=0&src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D13467895%2C689942136%26fm%3D214%26gp%3D0.jpg"
+        alt="这是胡歌哦"
+        title="胡哥哥"
+      />
+      <img
+        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592239976224&di=b39129f630aced4573402f8895212711&imgtype=0&src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D13467895%2C689942136%26fm%3D214%26gp%3D0.jpg"
+        alt="这是胡歌哦"
+        title="胡哥哥"
+      />
+      <img
+        src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592239976224&di=b39129f630aced4573402f8895212711&imgtype=0&src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D13467895%2C689942136%26fm%3D214%26gp%3D0.jpg"
+        alt="这是胡歌哦"
+        title="胡哥哥"
+      />
+    </div>
+  </body>
+</html>
