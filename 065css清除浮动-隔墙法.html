@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css清除浮动</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .box {
+            background-color: pink;
+        }
+
+        .box .son {
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+
+        .two {
+            height: 200px;
+            background-color: black;
+        }
+
+        /* 清除浮动第二种方法：额外标签法。（隔墙法） */
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="son" style="background-color: red;"></div>
+        <div class="son" style="background-color: green;"></div>
+        <div class="clear"></div>
+    </div>
+    <div class="two"></div>
+</body>
+</html>

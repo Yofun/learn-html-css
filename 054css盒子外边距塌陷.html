@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距塌陷</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .top {
+            margin: 20px 0;
+        }
+
+        .bottom {
+            margin: 100px 0;
+        }
+
+        /* 上下两个盒子的上下距离为100px
+            垂直的两个盒子的外边距
+         */
+
+         /* 塌陷 */
+         .father {
+             width: 500px;
+             height: 500px;
+             background-color: pink;
+         }
+
+         .son {
+             width: 200px;
+             height: 200px;
+             background-color: purple;
+             margin-top: 100px;
+         }
+
+         /* 解决办法：
+            1、给父元素border-top一个边框
+            2、可以给父元素指定一个padding-top
+            3、给父元素添加overflow:hidden
+          */
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="bottom"></div>
+
+    <hr/>
+
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

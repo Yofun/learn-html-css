@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>浮动练习</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      .container {
+        width: 1226px;
+        height: 615px;
+        margin: 10px auto;
+        background-color: pink;
+      }
+
+      .container .left {
+        float: left;
+        width: 234px;
+        height: 100%;
+        background-color: purple;
+      }
+
+      .container .right {
+        float: right;
+        width: 992px;
+        height: 100%;
+        background-color: skyblue;
+      }
+
+      .container .right li {
+        width: 234px;
+        height: 300px;
+        float: left;
+        margin-left: 14px;
+        background-color: red;
+        margin-bottom: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left"></div>
+      <div class="right">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
