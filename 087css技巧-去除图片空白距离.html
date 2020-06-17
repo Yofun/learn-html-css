@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>去除图片空白缝隙</title>
+
+    <style>
+
+        /**
+        解决1： 给图片设置vertical-align除了baseline的值以外的值
+        解决2： 将图片转换为 块级元素
+         */
+        div {
+            border: 1px solid red;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592418283421&di=a029e8bb4d1efa18baf2a7ae19512f7b&imgtype=0&src=http%3A%2F%2Fdingyue.nosdn.127.net%2FvsmucyzC7R6yp1GDxm9saZvDPtb6FKV52Ig55TIcYkQAJ1511313754672compressflag.jpg" alt="">
+    </div>
+
+    <div>
+        <img style="vertical-align: middle" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592418283421&di=a029e8bb4d1efa18baf2a7ae19512f7b&imgtype=0&src=http%3A%2F%2Fdingyue.nosdn.127.net%2FvsmucyzC7R6yp1GDxm9saZvDPtb6FKV52Ig55TIcYkQAJ1511313754672compressflag.jpg" alt="">
+    </div>
+
+    <div>
+        <img style="display: block" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592418283421&di=a029e8bb4d1efa18baf2a7ae19512f7b&imgtype=0&src=http%3A%2F%2Fdingyue.nosdn.127.net%2FvsmucyzC7R6yp1GDxm9saZvDPtb6FKV52Ig55TIcYkQAJ1511313754672compressflag.jpg" alt="">
+    </div>
+</body>
+</html>

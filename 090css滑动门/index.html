@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>滑动门</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            list-style: none;
+        }
+
+        body {
+            background: url("./wx.jpg") repeat-x;
+        }
+
+        .nav {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .nav li{
+            float: left;
+            margin-left: 10px;
+        }
+
+        .nav a {
+            display: inline-block;
+            height: 33px;
+            background: url("./to.png") no-repeat left top;
+            padding-left: 15px;
+            color: #fff;
+            line-height: 33px;
+        }
+
+        .nav a span {
+            display: inline-block;
+            height: 33px;
+            padding-right: 15px;
+            background: url("./to.png") no-repeat right top;
+        }
+
+        .nav a:hover {
+            background: url("./ao.png") no-repeat left top;
+        }
+
+        .nav a:hover span {
+            background: url("./ao.png") no-repeat right top;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="#">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>帮助与反馈</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>公众平台</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span>开放平台</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
