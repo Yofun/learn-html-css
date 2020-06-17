@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位改变display属性</title>
+
+    <style>
+
+        /**
+        固定定位和绝对定位 也和浮动类似，默认转换行内、块级元素为行内块元素
+         */
+
+
+        a {
+            color: white;
+        }
+
+        .fixed {
+            position: fixed;
+
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .absolute {
+            position: absolute;
+            right: 10px;
+            top: 0;
+
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+<a href="#" class="fixed">我是一个fixed链接</a>
+<a href="#" class="absolute">我是一个fixed链接</a>
+</body>
+</html>

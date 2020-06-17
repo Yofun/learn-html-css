@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        /**
+        绝对定位相对于文档定位时，bottom 为 0 会在浏览器可视窗口的底部，而不是在文档页面的底部
+         */
+        div {
+            position: absolute;
+            left: 100px;
+            bottom: 100px;
+
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

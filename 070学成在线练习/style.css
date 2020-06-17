@@ -3,17 +3,21 @@
     padding: 0;
     margin: 0;
 }
+
 body {
     background-color: #f3f5f7;
 }
+
 /* 清除列表样式 */
 li {
     list-style: none;
 }
+
 input:focus,
 button:focus {
     outline: -webkit-focus-ring-color auto 0;
 }
+
 a {
     text-decoration: none;
 }
@@ -38,23 +42,38 @@ a {
     width: 1200px;
     margin: auto;
 }
+
+.fixedbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    margin-left: -800px;
+    width: 180px;
+    height: 420px;
+    background-color: pink;
+}
+
 .header {
     height: 42px;
     /* background-color: pink; */
     margin: 30px auto;
 }
+
 .logo,
 .nav,
 .search,
 .user {
     float: left;
 }
+
 .logo {
     margin-right: 60px;
 }
+
 .nav ul li {
     float: left;
 }
+
 .nav li a {
     display: block;
     height: 40px;
@@ -166,7 +185,7 @@ a {
     margin-top: 10px;
 }
 
-.course-bd li a{
+.course-bd li a {
     display: block;
     height: 49px;
     border-bottom: 1px solid #eee;
@@ -197,6 +216,7 @@ a {
     background-color: #00a4ff;
     color: #fff;
 }
+
 /* banner end */
 
 
@@ -233,6 +253,7 @@ a {
     color: #00a4ff;
     cursor: pointer;
 }
+
 /* goods end */
 
 /* box start */
@@ -273,11 +294,19 @@ a {
 } */
 
 .box-bd ul li a {
+    position: relative;
     display: block;
     width: 228px;
     height: 270px;
     background-color: #fff;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, .3);
+}
+
+.box-bd ul li a .hot {
+    position: absolute;
+    top: 5px;
+    right: -3px;
+    width: 40px;
 }
 
 .box-bd ul li a img {
@@ -359,5 +388,6 @@ a {
 .links dd a:hover {
     color: #00a4ff;
 }
+
 /* footer end */
 

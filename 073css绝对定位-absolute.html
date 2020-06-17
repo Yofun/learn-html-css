@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css绝对定位</title>
+
+    <style>
+
+        /**
+        绝对定位：位于父盒子的padding+content内容中
+         */
+        .father {
+            position: relative;
+            width: 300px;
+            height: 1300px;
+            background-color: pink;
+            margin: 200px;
+        }
+
+        .son {
+            position: absolute;
+            bottom: 0px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

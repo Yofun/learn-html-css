@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zindex</title>
+
+
+    <style>
+        div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+        }
+
+        .one {
+            top: 50px;
+            left: 50px;
+            background-color: pink;
+        }
+
+        .two {
+            top: 100px;
+            left: 100px;
+            background-color: black;
+            z-index: 1;
+        }
+
+        .three {
+            top: 150px;
+            left: 150px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+</html>

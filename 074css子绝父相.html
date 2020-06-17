@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css子绝父相</title>
+
+    <style>
+        .w {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .top {
+            height: 100px;
+            padding: 50px;
+            background-color: pink;
+            /*父相*/
+            position: relative;
+        }
+
+        .top div {
+            /*子绝*/
+            position: absolute;
+            top: 25px;
+            width: 50px;
+            height: 50px;
+            background-color: black;
+        }
+
+        .arr-l {
+            left: 0;
+        }
+
+        .arr-r {
+            right: 0;
+        }
+
+        .bottom {
+            height: 100px;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top w">
+        <div class="arr-l"></div>
+        <div class="arr-r"></div>
+    </div>
+    <div class="bottom w"></div>
+</body>
+</html>
