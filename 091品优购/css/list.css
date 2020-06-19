@@ -1,0 +1,190 @@
+.sk {
+    position: absolute;
+    top: 40px;
+    left: 185px;
+    height: 32px;
+    border-left: 1px solid #b1191a;
+    padding-left: 14px;
+    padding-top: 5px;
+}
+
+
+.nav .sk_list {
+    float: left;
+}
+
+.sk_list li {
+    float: left;
+    margin: 0 30px;
+    line-height: 45px;
+}
+
+.sk_list li a {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+
+.sk_list li a:hover {
+    color: #c81523;
+}
+
+
+.nav .sk_con {
+    float: right;
+}
+
+.nav .sk_con li{
+    float: left;
+    line-height: 45px;
+    margin: 0 20px;
+}
+
+.nav .sk_con li a{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav .sk_con .iconfont {
+    vertical-align: top;
+    line-height: 38px;
+}
+
+
+/* 列表内容 start */
+.sk_bd {
+    margin-top: 25px;
+}
+
+.sk_bd ul {
+    width: 1212px;
+}
+
+.sk_bd .sk_goods_item {
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+}
+
+.sk_bd .sk_goods_item:hover {
+    border-color: #e12228;
+}
+
+.sk_bd .sk_goods_item a{
+    position: relative;
+    display: block;
+    width: 288px;
+    height: 458px;
+}
+
+.sk_goods_item h3 {
+    font-size: 14px;
+    columns: #333;
+    font-weight: 400;
+    padding: 10px 10px 10px;
+}
+
+.sk_goods_price {
+    padding: 0 10px;
+}
+
+.sk_goods_price em {
+    color: #e12228;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.sk_goods_price del {
+    font-size: 14px;
+    font-weight: 700;
+    color: #a4a4a4;
+}
+
+.sk_goods_progress {
+    padding: 0 10px;
+    color: #737373;
+    /* text-align: center; */
+}
+
+.sk_goods_progress .bar{
+    display: inline-block;
+    width: 130px;
+    height: 10px;
+    margin: 0 5px;
+    border: 1px solid #b1191a;
+    vertical-align: middle;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sk_goods_progress .bar .bar_inner{
+    width: 87%;
+    height: 100%;
+    background-color: #b1191a;
+}
+
+.sk_goods_progress em{
+    color: #e12228;
+}
+
+.sk_goods_item button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #b1191a;
+    color: #fff;
+    border: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.sk_fd {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.sk_fd .page_num {
+    
+}
+
+.sk_fd .page_num a,
+.page_skip button{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+}
+
+.sk_fd .page_num .page_num_pre,
+.sk_fd .page_num .page_num_next{
+    width: 82px;
+}
+
+.sk_fd .page_num a.current,
+.sk_fd .page_num a.dotted {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+
+.sk_fd .page_skip {
+    
+}
+
+.page_skip input{
+ width: 46px;
+ height: 36px;
+}
+
+.page_skip button{
+    width: 54px;
+    height: 36px;
+   }
+/* 列表内容 end */
