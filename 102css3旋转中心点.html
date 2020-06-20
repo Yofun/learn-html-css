@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3旋转中心点</title>
+
+    <style>
+        /* 
+        设置元素旋转中心点  transform-origin
+            默认值为：50% 50%
+            可取值：方位名词 方位名词;（如left|top|bottom|right|center） 
+                    数值 数值; (如 199px 200px)
+                    百分比数值 百分比数值;(百分比相对于自己。如：20% 40%)        
+        */
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 200px auto;
+            transition: all .5s;
+            /* 旋转中心为左下角 */
+            transform-origin: left bottom; 
+        }
+
+        div:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3动画的简写</title>
+
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: move 2s linear 1s infinite alternate backwards;
+      }
+
+      div:hover {
+        /* 动画暂停 */
+        animation-play-state: paused;
+      }
+
+      @keyframes move {
+        0% {
+          transform: translate(0, 0);
+        }
+
+        25% {
+          transform: translate(800px, 0);
+        }
+
+        50% {
+          transform: translate(800px, 500px);
+        }
+
+        75% {
+          transform: translate(0, 500px);
+        }
+
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

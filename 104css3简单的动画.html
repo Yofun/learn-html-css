@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3简单的动画</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 调用动画 */
+            animation-name: move;
+            animation-duration: 1s;
+        }
+
+
+      /* 
+      定义动画
+        可以填写 0% 50%
+        也可以取值：from to
+       */
+      @keyframes move {
+          /* 开始状态 */
+        0% {
+            transform: translateX(0);
+        }
+        /* 结束状态 */
+        100% {
+            transform: translateX(800px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+      <div>
+
+      </div>
+  </body>
+</html>

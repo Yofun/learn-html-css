@@ -6,13 +6,19 @@
     <title>css样式权重</title>
 
     <style>
-      /* 通配符权重: 0,0,0,0 */
+      /* 0,0,0,0
+        通配符选择器 *
+      */
       * {
       }
-      /* 标签权重: 0,0,0,1 */
+      /* 0,0,0,1
+        标签、伪元素（:::before|:::after）
+      */
       div {
       }
-      /* 类和伪类选择器权重：0,0,1,0 */
+      /* 类和伪类选择器权重：0,0,1,0
+        类、伪类（:hover|:visited|:link|:focus|:active）、属性选择器([class^="xxx"])、结构伪类选择器(:last-of-type|:nth-of-type(n))
+       */
       .one {
       }
       div:hover {

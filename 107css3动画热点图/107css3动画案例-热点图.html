@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画案例-大数据热力图</title>
+
+    <style>
+        body {
+            background-color: #333;
+        }
+
+        .map {
+            position: relative;
+            width: 747px;
+            height: 616px;
+            background: url(./map.png);
+            margin: 10px auto;
+        }
+
+        .dotted {
+            width: 8px;
+            height: 8px;
+            background-color: #09f;
+            border-radius: 50%;
+        }
+
+        .city div[class^="pulse"] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            /* 保证波纹在中间 */
+            transform: translate(-50%,-50%);
+            box-shadow: 0 0 12px #009dfd;
+            animation: scale 2s linear infinite;
+        }
+
+        .city div.pulse1{
+            animation-delay: 0;
+        }
+
+        .city div.pulse2{
+            animation-delay: 1s;
+        }
+
+        .city div.pulse3{
+            animation-delay: 2s;
+        }
+
+        .city {
+            position: absolute;
+        }
+
+        .beijing {
+            top: 228px;
+            right: 194px;
+        }
+
+        .taibei {
+            top: 498px;
+            right: 80px;
+        }
+
+        .guangzhou {
+            top: 530px;
+            right: 205px;
+        }
+
+        @keyframes scale {
+            from {
+                
+            }
+
+            to {
+                width: 60px;
+                height: 60px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="map">
+        <div class="city beijing">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+
+
+        <div class="city taibei">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+
+        <div class="city guangzhou">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+    </div>
+</body>
+</html>

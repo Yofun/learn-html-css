@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3 2D转换</title>
+
+    <style>
+      /* 
+        css3 2D转换包含：
+            移动：translate  对行内元素无效
+            旋转：rotate
+            缩放：scale
+
+        */
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+      }
+
+      .x,
+      .y,
+      .z {
+        transition: all 0.5s;
+      }
+
+      .translate {
+        background-color: #f5f5f5;
+      }
+      .translate:hover .x {
+        transform: translateX(100px);
+      }
+
+      .translate:hover .y {
+        transform: translateY(100px);
+      }
+
+      .translate:hover .z {
+        transform: translateZ(200px);
+      }
+
+
+      /* 
+        rotate() 表示顺时针、逆时针旋转
+      */
+      
+      .rotate {
+        background-color: #f5f5f5;
+        margin-top: 10px;
+      }
+
+      .rotate img{
+          width: 200px;
+          border: 2px solid orange;
+          border-radius: 50%;
+          transition: all .5s;
+      }
+
+      .rotate:hover img {
+          transform: rotate(360deg);
+      }
+
+      .rotate:hover .x {
+        transform: rotateX(45deg);
+      }
+
+      .rotate:hover .y {
+        transform: rotateY(45deg);
+      }
+
+      .rotate:hover .z {
+        transform: rotateZ(45deg);
+      }
+
+      .scale {
+        background-color: #f5f5f5;
+        margin-top: 10px;
+      }
+
+      .scale:hover .x{
+        transform: scaleX(2);
+      }
+
+      .scale:hover .y{
+        transform: scaleY(2);
+      }
+
+      .scale:hover .z{
+        transform: scaleZ(2);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="translate">
+      <div class="x box"></div>
+      <div class="y box"></div>
+      <div class="z box"></div>
+    </div>
+
+    <div class="rotate">
+        <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1518634545,2599967430&fm=26&gp=0.jpg" alt="">
+      <div class="x box"></div>
+      <div class="y box"></div>
+      <div class="z box"></div>
+    </div>
+
+    <div class="scale">
+        <div class="x box"></div>
+        <div class="y box"></div>
+        <div class="z box"></div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3动画的多个状态</title>
+
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        /* 动画名称 */
+        animation-name: move;
+        /* 动画时间 */
+        animation-duration: 2s;
+        /* 动画曲线 */
+        animation-timing-function: linear;
+        /* 动画延迟 */
+        animation-delay: 1s;
+        /* 动画播放次数
+            默认值为 1，如果想不断重复播放，可使用值：infinite
+        */
+        animation-iteration-count: infinite;
+        /* 动画播放方向
+                normal 正方向
+                alternate 正方向一次，反方向一次
+                reverse 反方向
+        */
+        animation-direction: alternate;
+        /* 动画保持结束
+            默认值：backwards
+            保持最后状态：forwards
+        */
+        animation-fill-mode: forwards;
+      }
+
+      div:hover {
+        /* 动画暂停 */
+        animation-play-state: paused;
+      }
+
+      @keyframes move {
+        0% {
+          transform: translate(0, 0);
+        }
+
+        25% {
+          transform: translate(800px, 0);
+        }
+
+        50% {
+          transform: translate(800px, 500px);
+        }
+
+        75% {
+          transform: translate(0, 500px);
+        }
+
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

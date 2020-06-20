@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>steps打字机效果</title>
+    <style>
+        div {
+            width: 0px;
+            height: 30px;
+            /* background-color: pink; */
+            line-height: 30px;
+            font-size: 20px;
+            overflow: hidden;
+            animation: print 4s steps(13) forwards;
+        }
+
+        @keyframes print {
+            100% {
+                width: 260px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>刘星雨我爱你冬冬是个大傻逼</div>
+</body>
+</html>
