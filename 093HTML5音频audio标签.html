@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML音频标签</title>
+</head>
+<body>
+    <!-- src 音频url地址 -->
+    <!-- controls 控制器 必须填写，不填写则不会播放 -->
+    <!-- autoplay 自动播放  chrome 禁用了 -->
+    <!-- loop 是否循环 -->
+    <!-- <audio src="http://m10.music.126.net/20200620154513/dab3ca7852ee7d7010c526607ff8fd97/ymusic/f55e/7f50/0ee7/4f36ed888157215dcfa17f2db81bf099.mp3"
+     controls="controls" autoplay="autoplay"></audio> -->
+
+     <!-- 因为不同浏览器支持不同的音频格式，我们采取的方案是 我们为这个音频准备多个音频格式 -->
+     <audio controls="controls">
+         <source src="http://m10.music.126.net/20200620154513/dab3ca7852ee7d7010c526607ff8fd97/ymusic/f55e/7f50/0ee7/4f36ed888157215dcfa17f2db81bf099.mp3" type="audio/mp3" />
+         您的浏览器不支持MP3音乐播放
+     </audio>
+</body>
+</html>

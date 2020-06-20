@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5视频标签</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background-color: #161823;
+      }
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+      }
+
+      .w {
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .w h2 {
+        margin-top: 20px;
+        height: 60px;
+      }
+
+      table th,
+      table td,
+      table {
+        border: 1px solid #fff;
+        border-collapse: collapse;
+      }
+      table th,
+      table td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 抖音官方视频 -->
+    <!-- <video muted="" data-autoplay="" loop="loop" autoplay="autoplay" src="https://s3.pstatp.com/aweme/resource/web/static/image/index/tvc-v3_0b9db49.mp4" class="video-tvc" id="video-tvc" data-object-fit="">抱歉，您的浏览器不支持内嵌视频</video> -->
+
+    <!-- 兼容性写法 -->
+    <video autoplay="autoplay" muted="muted" loop="loop" controls="controls">
+      <source
+        src="https://s3.pstatp.com/aweme/resource/web/static/image/index/tvc-v3_0b9db49.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+    <!-- 解决chrome 禁止自动播放：给视频添加静音属性 muted="" -->
+
+    <div class="box">
+      <div class="w">
+        <h2>video标签属性</h2>
+        <table>
+          <tr>
+            <th>属性</th>
+            <th>值</th>
+            <th>描述</th>
+          </tr>
+          <tr>
+            <td>autoplay</td>
+            <td>autoplay</td>
+            <td>
+              视频就绪自动播放（chrome浏览器需要添加muted来解决自动播放问题）
+            </td>
+          </tr>
+
+          <tr>
+              <td>controls</td>
+              <td>controls</td>
+              <td>向用户展示播放控件</td>
+          </tr>
+
+          <tr>
+              <td>width</td>
+              <td>像素单位</td>
+              <td>设置播放器宽度</td>
+          </tr>
+
+          <tr>
+            <td>height</td>
+            <td>像素单位</td>
+            <td>设置播放器高度</td>
+        </tr>
+
+        <tr>
+            <td>loop</td>
+            <td>loop</td>
+            <td>是否循环播放</td>
+        </tr>
+
+        <tr>
+            <td>preload</td>
+            <td>auto / none</td>
+            <td>规定是否预加载视频（如果有了autoplay就忽略该属性）</td>
+        </tr>
+
+        <tr>
+            <td>src</td>
+            <td>url</td>
+            <td>视频地址</td>
+        </tr>
+
+        <tr>
+            <td>poster</td>
+            <td>Image url</td>
+            <td>加载等待的画面</td>
+        </tr>
+
+        <tr>
+            <td>muted</td>
+            <td>muted</td>
+            <td>静音播放</td>
+        </tr>
+
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

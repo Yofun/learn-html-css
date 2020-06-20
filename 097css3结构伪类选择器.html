@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3结构伪类选择器</title>
+
+    <style>
+        /* 选中第一个 */
+        .box1 div:first-child {
+            background-color: pink;
+        }
+        /* 选中最后一个 */
+        .box1 div:last-child {
+            background-color: blue;
+        }
+        /* 选中第二个 */
+        .box1 div:nth-child(2) {
+            background-color: green;
+        }
+
+        /* 选中奇数行 */
+        /* 奇数odd 偶数 even */
+        .box1 div:nth-child(2n+1) {
+            background-color: red;
+        }
+
+
+        /* 错误 */
+        /* .box2 span:nth-child(1) { 选不到：因为既是span又是第一个孩子的元素是不存在的
+            background-color: pink;
+        } */
+
+        /* 正确用法 */
+        /* .box2 span:nth-child(2) {
+            background-color: pink;
+        } */
+
+        /* 总结：:nth-child(n) 选择 父元素里边的第n个孩子，他不管里边的孩子是否为同一种类型 */
+
+
+        /* 为了解决上述问题，出现了:last-of-type :first-of-type :nth-of-type() */
+        /* .box2 span:first-of-type {
+            background-color: pink;
+        } */
+        .box2 span:nth-of-type(2n) {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- first child -->
+    <div class="box1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <div class="box2">
+        <p>我是一个P</p>
+        <span>我是span</span>
+        <span>我是span</span>
+        <span>我是span</span>
+        <span>我是span</span>
+    </div>
+</body>
+</html>
