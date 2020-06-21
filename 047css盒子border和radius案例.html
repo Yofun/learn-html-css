@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border+border-raduis特效</title>
+
+    <style>
+        div {
+            float: left;
+            width: 180px;
+            height: 180px;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+
+        /* 正圆 */
+        div:nth-child(1) {
+            border: 1px solid red;
+            border-radius: 90px;
+        }
+
+        /* 拱形 */
+        div:nth-child(2) {
+            border: 1px solid red;
+            border-radius: 90px 90px 0 0;
+        }
+
+        /* 半圆 */
+        div:nth-child(3) {
+            height: 90px;
+            border: 1px solid red;
+            border-radius: 90px 90px 0 0;
+        }
+
+        /* 左上角弧形 */
+        div:nth-child(4) {
+            border: 1px solid red;
+            border-radius: 90px 0 0 0;
+        }
+
+        /* 1/4圆 */
+        div:nth-child(5) {
+            width: 90px;
+            height: 90px;
+            border: 1px solid red;
+            border-radius: 90px 0 0 0;
+        }
+
+        /* 横向椭圆 */
+        div:nth-child(6) {
+            height: 90px;
+            border: 1px solid red;
+            border-radius: 90px / 45px;
+        }
+
+        /* 竖向椭圆 */
+        div:nth-child(7) {
+            width: 90px;
+            border: 1px solid red;
+            border-radius:  45px / 90px;
+        }
+
+        /* 横向半椭圆 */
+        div:nth-child(8) {
+            height: 45px;
+            border: 1px solid red;
+            border-radius:  90px 90px 0 0 / 45px 45px 0 0;
+        }
+
+        /* 竖向半椭圆 */
+        div:nth-child(9) {
+            width: 45px;
+            border: 1px solid red;
+            border-radius:  45px 0 0 45px / 90px 0 0 90px;
+        }
+
+        /* 1/4椭圆 */
+        div:nth-child(10) {
+            height: 90px;
+            width: 45px;
+            border: 1px solid red;
+            border-radius:  45px 0 0 0 / 90px 0 0 0;
+        }
+        /* 圆环 */
+        div:nth-child(11) {
+            border: 30px solid red;
+            border-radius:  90px;
+        }
+
+        /* 圆角 */
+        div:nth-child(12) {
+            border: 50px solid red;
+            border-radius:  50px;
+        }
+
+        /* 左上角圆角 */
+        div:nth-child(13) {
+            border: 50px solid red;
+            border-radius:  50px 0 0 0;
+        }
+
+        /* 左上 右下 角圆角 */
+        div:nth-child(14) {
+            border: 50px solid red;
+            border-radius:  90px 0 90px;
+        }
+
+        /* 边框不一样颜色 */
+        div:nth-child(15) {
+            width: 0;
+            height: 0;
+            border-width: 90px;
+            border-style: solid;
+            border-top-color: red;
+            border-bottom-color: yellow;
+            border-left-color: blue;
+            border-right-color: blue;
+        }
+
+        div:nth-child(16) {
+            width: 0;
+            height: 0;
+            border-width: 90px;
+            border-style: solid;
+            border-top-color: red;
+            border-bottom-color: yellow;
+            border-left-color: blue;
+            border-right-color: transparent;
+        }
+
+        /* 贪吃 */
+        div:nth-child(17) {
+            width: 0;
+            height: 0;
+            border-width: 90px;
+            border-style: solid;
+            border-top-color: red;
+            border-bottom-color: red;
+            border-left-color: red;
+            border-right-color: transparent;
+            border-radius: 90px;
+        }
+
+        /* 食物 */
+        div:nth-child(18) {
+            width: 0;
+            height: 0;
+            border-width: 90px;
+            border-style: solid;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-right-color: red;
+            border-radius: 90px;
+        }
+
+        /* 上下圆*/
+        div:nth-child(19) {
+            width: 180px;
+            height: 0;
+            border-top: 90px solid red;
+            border-bottom: 90px solid green;
+            border-radius: 90px;
+        }
+
+        /* 五行八卦阵 */
+        div:nth-child(20) {
+            position: relative;
+            width: 180px;
+            height: 0;
+            border-top: 90px solid red;
+            border-bottom: 90px solid green;
+            border-radius: 90px;
+        }
+
+        div:nth-child(20)::before,
+        div:nth-child(20)::after {
+            content: "";
+            position: absolute;
+            top: -45px;
+            width: 90px;
+            height: 90px;
+            box-sizing: border-box;
+            border-width: 35px;
+            border-style: solid;
+            border-radius: 90px;
+        }
+        div:nth-child(20)::before{
+            left: 0;
+            border-color: green;
+            background-color: red;
+        }
+        div:nth-child(20)::after {
+            right: 0;
+            border-color: red;
+            background-color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>正圆</div>
+    <div>拱形</div>
+    <div>半圆</div>
+    <div>左上角弧形</div>
+    <div>1/4圆</div>
+    <div>横向椭圆</div>
+    <div>竖向椭圆</div>
+    <div>横向半椭圆</div>
+    <div>竖向半椭圆</div>
+    <div>1 / 4椭圆</div>
+    <div>圆环</div>
+    <div>圆角</div>
+    <div>左上角圆角</div>
+    <div>左上 右下 角圆角</div>
+    <div>边框不一样颜色</div>
+    <div>边框不一样颜色 无右边框</div>
+    <div>贪吃</div>
+    <div>食物</div>
+    <div>上下圆</div>
+    <div>五行八卦阵</div>
+</body>
+
+</html>

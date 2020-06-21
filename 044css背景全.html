@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景应用</title>
+    <style>
+        /* 
+            背景的属性：
+                background-color
+                background-size
+                background-image
+                background-position
+                background-clip
+                background-origin
+                background-repeat
+         */
+
+        div {
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        /* 背景颜色 */
+        .color {
+            background-color: pink;
+        }
+
+        .image {
+            background-image: url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1518634545,2599967430&fm=26&gp=0.jpg);
+            background-size: cover;
+        }
+
+        .position {
+            background-image: url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1518634545,2599967430&fm=26&gp=0.jpg);
+            background-position: bottom;
+        }
+
+        /* 针对background的显示范围 */
+        .clip {
+            background-image: url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1518634545,2599967430&fm=26&gp=0.jpg);
+            background-size: cover;
+            background-color: purple;
+            /* 只显示content这块区域的背景 */
+            background-clip: content-box;
+            padding: 20px;
+        }
+
+        /* 针对background的圆点位置 */
+        .origin {
+            background-image: url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1518634545,2599967430&fm=26&gp=0.jpg);
+            background-size: cover;
+            background-color: purple;
+            /* 只显示content这块区域的背景 */
+            background-clip: content-box;
+            /* 改变显示位置为content 这样背景就会显示全了 */
+            background-origin: content-box;
+            padding: 20px;
+        }
+
+        /* 剪切效果联系 */
+        .jiandao {
+            position: relative;
+            background-image: url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1518634545,2599967430&fm=26&gp=0.jpg);
+            background-size: cover;
+        }
+
+        .jiandao::before,
+        .jiandao::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 50px;
+            background-size: cover;
+            background-clip: content-box;
+        }
+
+        .jiandao::before {
+            background-color: #fff;
+        }
+
+
+        .jiandao::after {
+            /* left: 150px;
+            top: 150px;   */
+            left: 10px;
+            top: 10px;
+            background-image: url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1518634545,2599967430&fm=26&gp=0.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color"></div>
+    <div class="image"></div>
+    <div class="position"></div>
+    <div class="clip"></div>
+    <div class="origin"></div>
+
+    <!-- 裁剪练习 -->
+    <div class="jiandao"></div>
+</body>
+
+</html>

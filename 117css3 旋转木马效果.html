@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3旋转木马</title>
+
+    <style>
+        body {
+            perspective: 1000px;
+        }
+
+        section {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            margin: 100px auto;
+            transform-style: preserve-3d;
+            animation: rotate 10s linear infinite;
+        }
+
+        section:hover {
+            animation-play-state: paused;
+        }
+
+        section div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592739204680&di=2ec745bf196bc170a3356f7427912039&imgtype=0&src=http%3A%2F%2Fimgm.gmw.cn%2Fattachement%2Fjpg%2Fsite2%2F20160607%2Fb8ac6f402aaf18c0717d2b.jpg) no-repeat;
+            background-size: cover;
+        }
+
+        section div:nth-child(1) {
+            transform: translateZ(300px);
+        }
+
+        section div:nth-child(2) {
+            transform: rotateY(60deg) translateZ(300px);
+        }
+
+        section div:nth-child(3) {
+            transform: rotateY(120deg) translateZ(300px);
+        }
+
+        section div:nth-child(4) {
+            transform: rotateY(180deg) translateZ(300px);
+        }
+
+        section div:nth-child(5) {
+            transform: rotateY(240deg) translateZ(300px);
+        }
+
+        section div:nth-child(6) {
+            transform: rotateY(300deg) translateZ(300px);
+        }
+
+
+        @keyframes rotate {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>

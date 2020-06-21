@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>css3属性选择器</title>
 
-    <style>
-      /* 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>css3属性选择器</title>
+
+  <style>
+    /* 
         说明：属性选择器的权重为 0,0,1,0。和类、伪类选择器的权重相同
     */
 
-      div {
-        color: pink;
-      }
+    div {
+      color: pink;
+    }
 
-      /* 属性值为x的 */
-      div[class="icon1"] {
-        color: red;
-      }
-      /* 属性值以x开头的 */
-      div[class^="ii"] {
-        color: green;
-      }
-      /* 属性值以x结尾的 */
-      div[class$="n3"] {
-        color: purple;
-      }
-      /* 属性值包含x的 */
-      div[class*="h"] {
-        color: blue;
-      }
-    </style>
-  </head>
-  <body>
-    <div>正常正常</div>
-    <div class="icon1">哈哈哈哈1</div>
-    <div class="iicon2">哈哈哈哈2</div>
-    <div class="icon3">哈哈哈哈3</div>
-    <div class="icon4hh">哈哈哈哈4</div>
-  </body>
+    /* 属性值为x的 */
+    div[class="icon1"] {
+      color: red;
+    }
+
+    /* 属性值以x开头的 */
+    div[class^="ii"] {
+      color: green;
+    }
+
+    /* 属性值以x结尾的 */
+    div[class$="n3"] {
+      color: purple;
+    }
+
+    /* 属性值包含x的 */
+    div[class*="h"] {
+      color: blue;
+    }
+
+    /* 至少有一个,如 class="icon icon2233" */
+    div[class~="icon"] {
+      color: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <div>正常正常</div>
+  <div class="icon1">哈哈哈哈1</div>
+  <div class="iicon2">哈哈哈哈2</div>
+  <div class="icon3">哈哈哈哈3</div>
+  <div class="icon4hh">哈哈哈哈4</div>
+  <div class="icon4hh icon">哈哈哈哈4</div>
+</body>
+
 </html>

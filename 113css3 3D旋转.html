@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css 3D旋转</title>
+
+    <style>
+        /* 
+        transform:rotateX|rotateY|rotateZ  deg
+        简写       rotate3d(x,y,z,deg)
+        简写       rotate3d(1,1,0,45deg) 沿着对角线进行旋转
+        */
+
+        body {
+            perspective: 300px;
+        }
+
+        img {
+            display: block;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            transition: all 0.4s;
+        }
+
+        img:hover {
+            /* width: 300px;
+            height: 300px; */
+            transform: rotateY(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592704722020&di=0b76818528dc6f65465c948753779880&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201804%2F13%2F20180413220910_JdTut.jpeg"
+        alt="" />
+</body>
+
+</html>
