@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 主要属性
+            flex-direction              主轴方向
+            justify-content             设置主轴上的子元素排列方向
+            flex-wrap                   设置子元素是否换行
+            align-content               设置侧轴上的子元素的排列方式（多行）
+            aligin-items                设置侧轴上的子元素的排列方式（单行）
+            flex-flow                   复合属性，相当于同时设置了flex-direction和flex-wrap
+        */
+
+        div {
+            display: flex;
+            width: 80%;
+            height: 800px;
+            background-color: pink;
+            /* 默认主轴方向 */
+            /* flex-direction: row; */
+            /* 主轴翻转 */
+            /* flex-direction: row-reverse; */
+            /* 改变主轴方向 */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* 主轴子元素排列位置 */
+            /* 默认左侧对齐 */
+            /* justify-content: flex-start; */
+            /* 右侧对齐 顺序不变 */
+            /* justify-content: flex-end; */
+            /* 居中对齐 */
+            /* justify-content: center; */
+            /* 平分剩余空间 */
+            /* justify-content: space-around; */
+            /* 先两边贴边，再分配剩余的空间 */
+            /* justify-content: space-between; */
+
+            /* flex换行:默认为nowrap 不换行，会缩小子每个元素的宽度 */
+            flex-wrap: wrap;
+
+            /* 侧轴位置 */
+            /* 侧轴居中 */
+            /* align-items: center; */
+            /* 默认值 开始 */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* 不给盒子高度，会沿着侧轴方向拉伸 */
+            /* align-items: stretch; */
+
+
+            /* 侧轴多行内容位置 */
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-around;
+            align-content: space-between;
+        }
+
+        div span {
+            width: 150px;
+            height: 150px;
+            background-color: purple;
+            margin: 5px 5px 0 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+        <span>3</span>
+    </div>
+</body>
+</html>
