@@ -1,0 +1,181 @@
+body {
+    background-color: #f5f5f5;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* 修改container的最大宽度为1280 */
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.container {
+    background-color: #fff;
+}
+
+
+.row header {
+    padding: 0;
+}
+
+.logo {
+    background-color: #429ad9;
+}
+
+.logo span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    /* font-weight: 700; */
+}
+
+.logo img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/* 导航栏 */
+.nav {
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+@media screen and (max-width:991px) {
+    .nav li {
+        float: left;
+        width: 20%;   
+    }
+
+    article {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .nav li a{
+       font-size: 14px;
+       padding-left: 0; 
+       text-align: center;
+    }
+
+    article .news li:nth-child(1) {
+        width: 100%;
+    }
+
+    article .news li:nth-child(n+2) {
+        width: 50%;
+    }
+
+    article .publish h3 {
+        font-size: 14px;
+    }
+}
+
+.nav a {
+    display: block;
+    height: 50px;
+    padding-left: 30px;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+}
+
+.nav a::before {
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+/* 新闻模块 */
+.news li {
+    float: left;
+    width: 25%;
+    padding-right: 10px;
+    height: 128px;
+    margin-bottom: 10px;
+}
+
+
+.news li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.news li:nth-child(1) {
+    width: 50%;
+    height: 266px;
+}
+
+.news li a img {
+    height: 100%;
+}
+
+.news li a p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    height: 41px;
+    line-height: 41px;
+    margin: 0;
+}
+
+/* 发表模块 */
+.publish {
+    border-top: 1px solid #ccc;
+}
+
+.publish .row {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.pic {
+    margin-top: 10px;
+}
+
+/* 右侧 */
+aside .hot {
+    display: block;
+    margin-top: 20px;
+    padding: 0 20px 20px;
+    border: 1px solid #ccc;
+}
+
+aside .hot span {
+    border-radius: 0;
+}
