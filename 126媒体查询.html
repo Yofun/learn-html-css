@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>媒体查询</title>
+
+    <style>
+        /* 
+            媒体类型：
+                all     所有设备
+                print   打印机或打印设备
+                screen  电脑、平板、手机设备屏幕
+            
+            关键字：
+                and     可以将多个媒体特性连接到一起。相当于”且“的意思
+                not     排除某个媒体类型，相当于”非“的意思，可以省略
+                only    指定某个特定的媒体类型，可以省略
+
+        */
+
+        @media screen and (max-width: 800px) {
+            body {
+                background-color: pink;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            body {
+                background-color: purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

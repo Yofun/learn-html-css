@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rem单位</title>
+
+    <style>
+        /* 
+        rem(root em) 是一个相对单位 类似于em，em是父元素字体大小
+        不同的是rem的基准是相对于html元素的字体大小
+        比如，根元素（html）设置的font-size=12px；非根元素设置width：2rem，则换成px表示就是24px
+        */
+        html {
+            font-size: 20px;
+        }
+
+        div {
+            /* 可以看出。div的宽高为200px */
+            width: 10rem;
+            height: 10rem;
+            background-color: pink;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+// @import 可以把另一个less文件导入到当前less文件中
+@import "common";
+
+@fontSize: 50rem;
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    // background-color: #f2f2f2;
+    background-color: #ffc001;
+}
+
+.search_con {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: 88 / @fontSize;
+    background-color: #ffc001;
+
+    .classify {
+        width: 44 / @fontSize;
+        height: 70 / @fontSize;
+        margin: 11 / @fontSize 25 / @fontSize 7 / @fontSize 24 / @fontSize;
+        background: url(../images/classify.png) no-repeat;
+        background-size: 44 / @fontSize;
+    }
+
+    .search {
+        flex: 1;
+
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            height: 66 / @fontSize;
+            border: 0;
+            margin-top: 12 / @fontSize;
+            border-radius: 33 / @fontSize;
+            background-color: #fff2cc;
+            font-size: 25 / @fontSize;
+            padding: 0 10 / @fontSize 0 55 / @fontSize;
+            color: #757575;
+        }
+    }
+
+    .login {
+        width: 75 / @fontSize;
+        height: 70 / @fontSize;
+        margin: 10 / @fontSize;
+        font-size: 25 / @fontSize;
+        color: #fff;
+        text-align: center;
+        line-height: 70 / @fontSize;
+    }
+}
+
+
+.banner {
+    width: 750 / @fontSize;
+    height: 368 / @fontSize;
+    overflow: hidden;
+}
+
+.ad {
+    display: flex;
+    
+    a {
+        flex: 1;
+    }
+}
+
+
+nav {
+    background-color: #fff;  
+    font-size: 25 / @fontSize;
+    text-align: center;
+    
+    .nav_con {
+        width: 750 / @fontSize;
+        margin: 0 auto;
+        
+        a {
+            float: left;
+            width: 150 / @fontSize;
+            height: 140 / @fontSize;
+            color: #333;
+
+            img {
+                display: block;
+                width: 82 / @fontSize;
+                height: 82 / @fontSize;
+                margin: 10 / @fontSize auto 0;
+            }
+        }
+    }
+}
+

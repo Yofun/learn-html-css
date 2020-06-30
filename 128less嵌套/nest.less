@@ -1,0 +1,22 @@
+@bg_pink: pink;
+
+.header {
+    background-color: @bg_pink;
+
+    a {
+        color: red;
+        text-decoration: none;
+        // 伪类伪元素选择器
+        &:hover {
+            color: green;
+        }
+    }
+}
+
+nav {
+    &::after {
+        content: "Hello Wolrd!";
+    }
+}
+
+// less运算

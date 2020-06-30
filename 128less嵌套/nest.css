@@ -1,0 +1,13 @@
+.header {
+  background-color: pink;
+}
+.header a {
+  color: red;
+  text-decoration: none;
+}
+.header a:hover {
+  color: green;
+}
+nav::after {
+  content: "Hello Wolrd!";
+}
